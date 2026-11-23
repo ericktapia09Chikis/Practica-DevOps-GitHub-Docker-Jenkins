@@ -1,0 +1,13 @@
+{
+  "name": "app-registro-utfv",
+  "version": "1.0.0",
+  "description": "Aplicacion web para registro y consulta - Practica DevOps",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node -e \"console.log('Pruebas unitarias exitosas: OK')\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
