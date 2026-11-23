@@ -20,8 +20,8 @@ pipeline {
         }
         stage('4. Desplegar Contenedor') {
             steps {
-                sh 'docker rm -f contenedor-pipeline || true'
-                sh 'docker run -d -p 3001:3000 --name contenedor-pipeline app-devops-utfv:latest'
+                sh 'docker rm -f contenedor-devops contenedor-pipeline || true'
+                sh 'docker run -d -p 3000:3000 --name contenedor-pipeline app-devops-utfv:latest'
             }
         }
     }
